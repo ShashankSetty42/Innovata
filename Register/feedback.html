@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+<h1 style="text-align: center; color: #D32F2F">Leave A Feedback</h1><br>
+<div class="container">
+  <form action="feedback.php" method="get">
+    <div class="row" style="padding-top: 40px;">
+        <h4>Email</h4>
+        <div class="input-group input-group-icon">
+        <input type="text" name="email" required/>
+        <div class="input-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+      </div>
+        <h4>Summary</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" name="sum" required/>
+        <div class="input-icon"><i class="fa fa-commenting" aria-hidden="true"></i></div>
+      </div>
+        <h4>Feedback</h4>
+        <textarea id="feed"name="feedback" style="height: 100px; width: 480px;"></textarea>
+      <div style="padding-top: 10px;">
+        <input class="submitbutton" type="submit" value="Submit"/>
+    </div>
+      </div>
+  </form>
+</div>
+</body>
+</html>

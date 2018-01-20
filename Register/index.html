@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+<h1 style="text-align: center; color: #D32F2F">Step 1/3</h1> <br>
+<div class="container">
+  <form action="1.php" method="post" enctype="multipart/form-data">
+    <div class="row">
+      <h4>Project Details</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" name="pname" placeholder="Project Name" required/>
+        <div class="input-icon"><i class="fa fa-microchip" aria-hidden="true"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <div class="input-group input-group-icon">
+            <h4>Select your stream</h4>
+            <select name="branch" required>
+                <option value="">Select</option>
+                <option value="civ">Civil</option>
+                <option value="ele">Electrical</option>
+                <option value="ec">Electronics</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Instrumentation</option>
+                <option value="me">Mechanical</option>
+                <option value="ft">Food Technology</option> 
+                <option value="ce">Chemical</option>
+                <option value="lv">LabVIEW</option> 
+                <option value="rb">Robotics</option>
+            </select>
+       </div>
+      </div>
+      <div class="input-group input-group-icon">
+          <h4>Do you want to participate in theme contest?</h4>
+          <input type="radio" name="theme" value="yes" id="themecontest1" required/>
+          <label for="themecontest1">Yes</label>
+          <input type="radio" name="theme" value="no" id="themecontest2" required/>
+          <label for="themecontest2">No</label>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" name="college" placeholder="College Name With Address" required/>
+        <div class="input-icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" name="uni" placeholder="University Name" required/>
+        <div class="input-icon"><i class="fa fa-university" aria-hidden="true"></i></div>
+      </div>
+        <div class="input-group input-group-icon">
+        <input type="text" name="requirements" placeholder="Exhibition requirements" required/>
+        <div class="input-icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
+      </div>
+        <div class="input-group input-group-icon">
+        <input type="text" name="abstract" placeholder="Project Abstract (300-600 words)" required/>
+        <div class="input-icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+        </div>
+         <div class="input-group input-group-icon">
+             <h4>Picture of your project (max 2mb)</h4>
+             <input type="file" name="projectimg" id="projectimg" required/> 
+        </div>
+        <div>
+        <input name="submit" class="submitbutton" type="submit" value="Next"/>
+    </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
